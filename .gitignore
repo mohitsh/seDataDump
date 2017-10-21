@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# xml
+*.xml
+
+# credentials
+dataScience/cred.py
