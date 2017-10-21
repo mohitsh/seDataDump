@@ -1,0 +1,68 @@
+
+
+#  Posts.xml => posts table
+
+<row Id="16" 
+PostTypeId="1" 
+AcceptedAnswerId="46" 
+CreationDate="2014-05-14T01:57:56.880" 
+Score="15" 
+ViewCount="247" 
+Body="&lt;p&gt;I use &lt;a href=&quot;http://www.csie.ntu.edu.tw/~cjlin/libsvm/&quot;&gt;Libsvm&lt;/a&gt; to train data and predict classification on &lt;strong&gt;semantic analysis&lt;/strong&gt; problem. But it has a &lt;strong&gt;performance&lt;/strong&gt; issue on large-scale data, because semantic analysis concerns &lt;strong&gt;&lt;em&gt;n-dimension&lt;/em&gt;&lt;/strong&gt; problem.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Last year, &lt;a href=&quot;http://www.csie.ntu.edu.tw/~cjlin/liblinear/&quot;&gt;Liblinear&lt;/a&gt; was release, and it can solve performance bottleneck.&#xA;But it cost too much &lt;strong&gt;memory&lt;/strong&gt;. Is &lt;strong&gt;MapReduce&lt;/strong&gt; the only way to solve semantic analysis problem on big data? Or are there any other methods that can improve memory bottleneck on &lt;strong&gt;Liblinear&lt;/strong&gt;?&lt;/p&gt;&#xA;" 
+OwnerUserId="63" 
+LastEditorUserId="84" 
+LastEditDate="2014-05-17T16:24:14.523" 
+LastActivityDate="2014-05-17T16:24:14.523" 
+Title="Use liblinear on big data for semantic analysis" 
+Tags="&lt;machine-learning&gt;&lt;bigdata&gt;&lt;libsvm&gt;" 
+AnswerCount="2" CommentCount="0" />
+
+CREATE TABLE posts (Id INT NOT NULL PRIMARY KEY, 
+                    PostTypeId INT, 
+                    AcceptedAnswerId INT, 
+                    CreationDate TIMESTAMP, 
+                    Score INT, 
+                    ViewCount INT, 
+                    Body VARCHAR(3000), 
+                    OwnerUserId INT, 
+                    LastEditorUserId INT, 
+                    LastEditDate TIMESTAMP, 
+                    LastActivityDate TIMESTAMP, 
+                    Title VARCHAR(256), 
+                    Tags VARCHAR(500), 
+                    AnswerCount INT,
+                    CommentCount INT);
+
+
+
+LOAD XML LOCAL INFILE './Posts.xml' INTO TABLE posts(Id, 
+                                                     PostTypeId, 
+                                                     AcceptedAnswerId, 
+                                                     CreationDate, 
+                                                     Score, 
+                                                     ViewCount, 
+                                                     Body, 
+                                                     OwnerUserId, 
+                                                     LastEditorUserId, 
+                                                     LastEditDate, 
+                                                     LastActivityDate, 
+                                                     Title, 
+                                                     Tags, 
+                                                     AnswerCount, 
+                                                     CommentCount)
+
+# Users.xml => users table
+<row Id="7" 
+Reputation="101" 
+CreationDate="2014-05-13T23:17:05.443" 
+DisplayName="Undo" 
+LastAccessDate="2016-11-17T16:12:34.487" 
+WebsiteUrl="http://keybase.io/undo" 
+AboutMe="&#xA;&#xA;&lt;p&gt;Moderator on &lt;a href=&quot;//stackoverflow.com&quot;&gt;Stack Overflow&lt;/a&gt;, &lt;a href=&quot;//softwarerecs.stackexchange.com/&quot;&gt;Software Recommendations&lt;/a&gt; and &lt;a href=&quot;//hardwarerecs.stackexchange.com/&quot;&gt;Hardware Recommendations&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&quot;http://stackexchange.com/users/1703573&quot;&gt;&#xA;&lt;img src=&quot;http://stackexchange.com/users/flair/1703573.png&quot; width=&quot;208&quot; height=&quot;58&quot; alt=&quot;profile for Undo on Stack Exchange, a network of free, community-driven Q&amp;amp;A sites&quot; title=&quot;profile for Undo on Stack Exchange, a network of free, community-driven Q&amp;amp;A sites&quot;&gt;&#xA;&lt;/a&gt;&lt;/p&gt;&#xA;" 
+Views="3" 
+UpVotes="1" 
+DownVotes="1" 
+AccountId="1703573" />
+
+
+
