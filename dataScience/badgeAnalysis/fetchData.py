@@ -20,23 +20,18 @@ def get_conn():
     return conn
 
 
-def db_processing(token):
+def table_reader(table_name):
     conn = get_conn()
-    tags_query = "SELECT * FROM tags"
-    tags = pd.read_sql(tags_query, conn)
-
-    posts_query = "SELECT Id, Body,OwnerUserId, PostTypeId, Score,ViewCount, Title,Tags, AnswerCount, CommentCount FROM posts"
-    posts = pd.read_sql(posts_query, con=conn)
-
-    badges_query = "SELECT * FROM badges"
-    badges = pd.read_sql(badges_query, con=conn)
+    query = ' '.join(["SELECT * FROM ", table_name])
+    result = pd.read_sql(query, conn)
+    return result
 
 
-
-    users_query = "SELECT Id, DisplayName, Reputation,CreationDate, Location, AboutMe, Views, UpVotes, DownVotes, AccountId FROM users"
-    users = pd.read_sql(users_query, con=conn)
-
-
+def db_processing(token):
+    tags = table_reader('tags')
+    posts = table_reader('posts')
+    badges = table_reader('badges')
+    users = table_reader('users');
 
     badges_sub = badges.loc[badges['Name'] == token]
     complete_info = pd.merge(badges_sub, users, left_on= 'UserId', right_on='Id')
