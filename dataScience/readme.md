@@ -34,16 +34,70 @@
 
 *Country wise Critic Badge Holders*
 
+|          Country | Number of Critic Badge Holders|
+|----------------- | -----------------------------|
+|   United States  |                            14|
+|         Germany  |                             8|
+|  United Kingdom  |                             6|
+|           India  |                             6|
+|          France  |                             3|
+|         Belgium  |                             2|
+|          Turkey  |                             2|
+|           Spain  |                             2|
+|       Singapore  |                             2|
+
+
+
 *Country wise Revival Badge Holders*
+
+|           Country | Number of Revial Badge Holders|
+| ----------------- |------------------------------|
+|    United States  |                            12|
+|            India  |                            10|
+|          Germany  |                            10|
+|   United Kingdom  |                             5|
+|  Between 0 and 1  |                             3|
+|  Series of tubes  |                             3|
+|          Romania  |                             3|
+
+
 
 *Country wise Scholar Badge Holders*
 
+|           Country  | Number of Scholar Badge Holders|
+|--------------------|--------------------------------|
+|    United States    |                           22|
+|           India     |                          20|
+|   United Kingdom    |                          10|
+|         Germany     |                          10|
+|           Russia    |                            7|
+|             Iran    |                            6|
+|           Israel    |                            6|
+|           France    |                            5|
+|        Australia    |                            5|
+|        Singapore    |                            3|
+|         HongKong    |                            3|
+|      Netherlands    |                            3|
+|           China     |                           3|
+
+
+
 *Country wise Citizen Patrol Badge Holders*
+
+|          Country  | Number of Citizen Patrol Badge Holders|
+|------------------- | ------------------------------------ |
+|  United Kingdom   |                                   10|
+|         Germany   |                                    7|
+|   United States   |                                    6|
+|          France   |                                    6|
+|           India   |                                    3|
+|          Poland   |                                    3|
+|         Belgium   |                                    3|
 
 
 
 ##### Source Code & Output
 * Country wise comparison source code is [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
 * All the resulting plots are [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/plots)
-* Only one Recepient badge holder source code is [here]()
+* Only one Recepient badge holder source code is [here](https://github.com/mohitsh/seDataDump/blob/master/dataScience/badgeAnalysis/ds_onlyOneRecepient.py)
 
