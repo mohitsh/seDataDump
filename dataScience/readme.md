@@ -9,7 +9,7 @@
 
 |Badge|Property|
 |-----|--------|
-| Scholar    | Ask a question and accept an answer        |1
+| Scholar    | Ask a question and accept an answer        |
 | Critic    |  First down vote        |
 | Revival    | Answer more than 30 days after a question was asked as first answer scoring 2 or more       |
 | Citizen Patrol    |  First flagged post       |
@@ -21,4 +21,22 @@
 * A threshold value (typically 3) has been used for number of award recepients per country
 * Source code is [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
 * All the resulting plots are [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/plots)
+
+
+*Country wise Critic Badge Holders*
+
+![Alt Text](https://github.com/mohitsh/seDataDump/blob/master/dataScience/plots/ds_critic.png)
+
+*Country wise Revival Badge Holders*
+
+![Alt Text](https://github.com/mohitsh/seDataDump/blob/master/dataScience/plots/ds_revival.png)
+
+*Country wise Scholar Badge Holders*
+
+![Alt Text](https://github.com/mohitsh/seDataDump/blob/master/dataScience/plots/ds_scholars.png)
+
+*Country wise Citizen Patrol Badge Holders*
+
+![Alt Text](https://github.com/mohitsh/seDataDump/blob/master/dataScience/plots/ds_citizenPatrol.png)
+
 
