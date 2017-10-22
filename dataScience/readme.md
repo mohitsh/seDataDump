@@ -106,6 +106,16 @@
 | \<classification\>   |                  28|
 | \<data-mining\>      |                  27|
 
+##### Most Awarded Badges
+| Badge | Number of Times Awarded |
+|-------|-------------------------|
+| Autobiographer |   6939|
+| Supporter      |   2577|
+| Student        |   2014|
+| Informed       |   1397|
+| Editor         |   1292|
+| Teacher        |   1193|
+
 
 ##### Source Code & Output
 * Country wise comparison [source code](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
