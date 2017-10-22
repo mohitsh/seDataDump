@@ -95,6 +95,17 @@
 |         Belgium   |                                    3|
 
 
+##### Most Popular Tags Used in Posts
+
+|Tag| Number of Appearance |
+|---|--------------------- |
+| \<machine-learning\> |                   92|
+| \<r\>                |                  58|
+| \<neuralnetwork\>    |                  48|
+| \<machine-learning\>\<neuralnetwork\>  |  41|
+| \<classification\>   |                  28|
+| \<data-mining\>      |                  27|
+
 
 ##### Source Code & Output
 * Country wise comparison source code is [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
