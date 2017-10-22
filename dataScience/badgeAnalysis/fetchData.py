@@ -20,7 +20,7 @@ def get_conn():
     return conn
 
 
-def fetch_data(token, e):
+def db_processing(token):
     conn = get_conn()
     tags_query = "SELECT * FROM tags"
     tags = pd.read_sql(tags_query, conn)
@@ -40,8 +40,14 @@ def fetch_data(token, e):
 
     badges_sub = badges.loc[badges['Name'] == token]
     complete_info = pd.merge(badges_sub, users, left_on= 'UserId', right_on='Id')
+    return complete_info
+
+
+def fetch_data(token, e):
+    complete_info = db_processing(token)
     location = complete_info.Location.value_counts()
     location = location[location>=e]
+    return location
 
 
 def draw_plot():

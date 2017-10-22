@@ -26,9 +26,9 @@ def processor():
 
     sea.set(color_codes=True)
     sea.set_style('whitegrid')
-    sea.stripplot(x='Country', y='Number of Revial Badge Holders', data=df_revival_badge, jitter=True, alpha=0.95, size=10)
+    sea.stripplot(x='Country', y='Number of Revial Badge Holders', data=df_revival_badge, jitter=True, alpha=0.95, size=15)
     sea.despine(offset=20, trim=True)
-    plt.xticks(rotation=90)
+    plt.xticks(rotation=90, fontsize=15)
     plt.tight_layout()
     plt.show()
 
