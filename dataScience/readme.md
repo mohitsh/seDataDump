@@ -3,7 +3,7 @@
 
 #### Part 1
 
->Analysis of [data science exchange](https://datascience.stackexchange.com) data dump.In the first part of analysis [badges](https://datascience.stackexchange.com/help/badges) awarded by DS Exchange have been considered. In the analysis four badges have been used.
+>Analysis of [data science exchange](https://datascience.stackexchange.com) data dump. First part of the analysis is based on [badges](https://datascience.stackexchange.com/help/badges) awarded by DS Exchange.
 
 ##### Badge Description 
 
@@ -19,24 +19,31 @@
 * Goal is to find coutry wise badge recepients
 * Not all of the coutries have been considered (ofcourse). Instead top 8-14 coutires have been selected dependent on data.
 * A threshold value (typically 3) has been used for number of award recepients per country
-* Source code is [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
-* All the resulting plots are [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/plots)
+
+
+
+
+##### Badges with Only One Recepient
+
+|Badge|User Name|Location|Reputation
+|-----|--------|---------|----------|
+| [Inquisitive](https://datascience.stackexchange.com/help/badges/88/inquisitive) | Martin Thoma | Karlsruhe, Germany | 2314|
+| [Stellar Question](https://datascience.stackexchange.com/help/badges/36/stellar-question)  | Amir Ali Akbari | Tehran, Iran | 740 |
+| [Synonymizer](https://datascience.stackexchange.com/help/badges/72/synonymizer)   |Sean Owen | United Kingdom | 2931 |
 
 
 *Country wise Critic Badge Holders*
 
-![Alt Text](https://github.com/mohitsh/seDataDump/blob/master/dataScience/plots/ds_critic.png)
-
 *Country wise Revival Badge Holders*
-
-![Alt Text](https://github.com/mohitsh/seDataDump/blob/master/dataScience/plots/ds_revival.png)
 
 *Country wise Scholar Badge Holders*
 
-![Alt Text](https://github.com/mohitsh/seDataDump/blob/master/dataScience/plots/ds_scholars.png)
-
 *Country wise Citizen Patrol Badge Holders*
 
-![Alt Text](https://github.com/mohitsh/seDataDump/blob/master/dataScience/plots/ds_citizenPatrol.png)
 
+
+##### Source Code & Output
+* Country wise comparison source code is [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
+* All the resulting plots are [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/plots)
+* Only one Recepient badge holder source code is [here]()
 
