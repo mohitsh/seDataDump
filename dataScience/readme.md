@@ -18,4 +18,7 @@
 * Badges awarded by the data science exchange are are analyzed in this part
 * Goal is to find coutry wise badge recepients
 * Not all of the coutries have been considered (ofcourse). Instead top 8-14 coutires have been selected dependent on data.
+* A threshold value (typically 3) has been used for number of award recepients per country
+* Source code is [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
+* All the resulting plots are [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/plots)
 
