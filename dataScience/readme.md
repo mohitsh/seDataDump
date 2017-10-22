@@ -106,9 +106,20 @@
 | \<classification\>   |                  28|
 | \<data-mining\>      |                  27|
 
+##### Most Awarded Badges
+| Badge | Number of Times Awarded |
+|-------|-------------------------|
+| Autobiographer |   6939|
+| Supporter      |   2577|
+| Student        |   2014|
+| Informed       |   1397|
+| Editor         |   1292|
+| Teacher        |   1193|
+
 
 ##### Source Code & Output
-* Country wise comparison source code is [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
-* All the resulting plots are [here](https://github.com/mohitsh/seDataDump/tree/master/dataScience/plots)
-* Only one Recepient badge holder source code is [here](https://github.com/mohitsh/seDataDump/blob/master/dataScience/badgeAnalysis/ds_onlyOneRecepient.py)
+* Country wise comparison [source code](https://github.com/mohitsh/seDataDump/tree/master/dataScience/badgeAnalysis)
+* Most popuar tags [source code](https://github.com/mohitsh/seDataDump/blob/master/dataScience/badgeAnalysis/ds_popularTags.py)
+* Only one Recepient badge holder [source code](https://github.com/mohitsh/seDataDump/blob/master/dataScience/badgeAnalysis/ds_onlyOneRecepient.py)
+* All the resulting [plots](https://github.com/mohitsh/seDataDump/tree/master/dataScience/plots)
 
