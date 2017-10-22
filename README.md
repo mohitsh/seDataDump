@@ -12,6 +12,7 @@ This project presents analysis of various data sets available at [Stack Exchange
 ##### Footnotes
 * Each stack exchnage data set should have one seperate data base with correspnoding tables (typically 8)
 * There are various ways for data dump I/O. I have taken the above mentioned road.
+* At the time of writing this Publication date of data dump: 2017-08-31
 
 
 ##### File Structure
