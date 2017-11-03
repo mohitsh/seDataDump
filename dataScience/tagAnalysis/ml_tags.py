@@ -35,53 +35,29 @@ def processor(token):
             pass
         else:
             storage[key] = val
-        
 
-
-    #date_bins = [pd.Timestamp('2014-05-13 23:58:30'), pd.Timestamp('2014-12-31 23:59:59'), pd.Timestamp('2015-01-01 00:00:00'),pd.Timestamp('2015-06-30 23:59:59'), pd.Timestamp('2015-07-01 00:00:00'),pd.Timestamp('2015-12-31 23:59:59'), pd.Timestamp('2016-01-01 00:00:00'),pd.Timestamp('2016-06-30 23:59:59'), pd.Timestamp('2016-07-01 00:00:00'),pd.Timestamp('2016-12-31 23:59:59')]
-
-
-    #date_mask1 = (posts_tag_date_token['CreationDate'] > date_bins[0]) & (posts_tag_date_token['CreationDate'] <= date_bins[1])
-    #df1 = posts_tag_date_token.loc[date_mask1]
-
-    #date_mask2 = (posts_tag_date_token['CreationDate'] > date_bins[2]) & (posts_tag_date_token['CreationDate'] <= date_bins[3])
-    #df2 = posts_tag_date_token.loc[date_mask2]
-
-    #date_mask3 = (posts_tag_date_token['CreationDate'] > date_bins[4]) & (posts_tag_date_token['CreationDate'] <= date_bins[5])
-    #df3 = posts_tag_date_token.loc[date_mask3]
-
-    #date_mask4 = (posts_tag_date_token['CreationDate'] > date_bins[6]) & (posts_tag_date_token['CreationDate'] <= date_bins[7])
-    #df4 = posts_tag_date_token.loc[date_mask4]
-
-    #date_mask5 = (posts_tag_date_token['CreationDate'] > date_bins[8]) & (posts_tag_date_token['CreationDate'] <= date_bins[9])
-    #df5 = posts_tag_date_token.loc[date_mask5]
-
-
-    #storage = {'2014-05-13 - 2014-12-31':len(df1), '2015-01-01 - 2015-06-30':len(df2), '2015-07-01 - 2015-12-31':len(df3), '2016-01-01 - 2016-06-30':len(df4), '2016-07-01 - 2016-12-31':len(df5)}
 
     final_count = pd.DataFrame.from_dict([storage]).transpose()
-    final_count = final_count.reset_index()
-    final_count.columns = ['time_frame', 'val_count']
+    #final_count = final_count.reset_index()
+    final_count.columns = [token]
 
 
-    #sea.set(color_codes=True)
-    #sea.set_style('whitegrid')
-    #sea.stripplot(x='time frame', y='count', data=final_count, jitter=True, alpha=0.95, size=13, palette="Set1")
-    #sea.tsplot(data=final_count, value="val_count", time="time_frame")
-    #sea.despine(offset=20, trim=True)
-    #plt.xticks(rotation=45, fontsize=10)
-    #plt.tight_layout()
+    #final_count.plot(lw=0.5, style='b',figsize=(7,5), x='Time', y=token)
     #plt.show()
+    return final_count
 
-    print(len(final_count.time_frame))
-    print(len(final_count.val_count))
-
-
-    #final_count[['val_count']].plot()
-    final_count.plot(lw=0.5, style='b',figsize=(7,5), x='time_frame', y='val_count')
-    #plt.plot(final_count.time_frame, final_count.val_count)
-    plt.show()
 
 if __name__ == '__main__':
-    token = 'classification'
-    processor(token)
+    tokens = ['r', 'python']
+    tokens = ['data-mining', 'machine-learning']
+    tokens = ['bigdata', 'hadoop']
+    tokens = ['r', 'octave']
+    tokens = ['clustering', 'predictive']
+    for i, token in enumerate(tokens):
+        df = processor(token)
+        if i == 0:
+            ax = df.plot()
+        else:
+            df.plot(ax = ax)
+
+    plt.show()
